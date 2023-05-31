@@ -43,6 +43,8 @@ After you're finished please remove all the comments and instructions!
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - 💻 Getting Started](#getting-started)
+    - [Setup](#setup)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -90,6 +92,20 @@ After you're finished please remove all the comments and instructions!
 - [Live Demo Link](https://feliperto.github.io/PortfolioWebsite-Microverse/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+
+### Setup
+
+Clone this repository to your desired folder:
+
+  cd my-folder
+  
+  git clone https://github.com/Feliperto/PortfolioWebsite-Microverse.git
+
 
 
 <!-- AUTHORS -->
