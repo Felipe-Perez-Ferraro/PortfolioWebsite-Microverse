@@ -43,7 +43,7 @@ After you're finished please remove all the comments and instructions!
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - 💻 Getting Started](#getting-started)
+- 💻 [Getting Started](#getting-started)
     - [Setup](#setup)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
