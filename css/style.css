@@ -285,6 +285,7 @@ body {
 }
 
 .about__abilities__container {
+  list-style: none;
   padding: 24px 0;
   display: flex;
   align-items: center;
