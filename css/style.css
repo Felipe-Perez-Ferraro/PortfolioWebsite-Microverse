@@ -14,7 +14,7 @@
   --buttonColor: #396df2;
   --mainBackground: #e5e5e5;
   --socialMedia: #505f79;
-  --borderColor: #DFE1E6;
+  --borderColor: #dfe1e6;
 }
 
 body {
@@ -28,18 +28,6 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: center;
-}
-
-body.scrolled .navbar__section {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: none;
-  padding: 0 49px;
-  transition: .5s ease;
-  background: #fff;
 }
 
 .navbar__section {
@@ -144,7 +132,6 @@ body.scrolled .navbar__section {
   max-width: 327px;
   margin: 0 auto;
   border: 2px solid var(--borderColor);
-  box-shadow: 0 0 0 0 .5px;
   border-radius: 16px;
   padding: 16px;
   gap: 12px;
@@ -185,7 +172,7 @@ body.scrolled .navbar__section {
 .work__features__item {
   font-size: 13px;
   list-style: inside;
-  color: #7A869A;
+  color: #7a869a;
   font-weight: 600;
 }
 
@@ -202,7 +189,7 @@ body.scrolled .navbar__section {
 }
 
 .work__language__item {
-  background-color: #EBEBFF;
+  background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
   color: var(--thirdColor);
@@ -232,7 +219,7 @@ body.scrolled .navbar__section {
 }
 
 .about__container {
-  background-color: #fff; 
+  background-color: #fff;
   padding: 114px 0;
   border-radius: 0 15% 0 0;
 }
@@ -258,7 +245,7 @@ body.scrolled .navbar__section {
 }
 
 .about__callToAction {
-  color: #7F8CFF;
+  color: #7f8cff;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
@@ -295,7 +282,7 @@ body.scrolled .navbar__section {
   max-width: 327px;
   margin: 0 auto;
   gap: 12px;
-} 
+}
 
 .about__abilities__container {
   padding: 24px 0;
@@ -305,12 +292,11 @@ body.scrolled .navbar__section {
 }
 
 .about__abilities__container.active {
-  border-bottom: 1px solid #DFE1E6;
-  
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .about__abilities__title {
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -322,7 +308,7 @@ body.scrolled .navbar__section {
 }
 
 .about__list__item {
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   padding: 12px;
   border-radius: 8px;
 }
@@ -343,6 +329,7 @@ body.scrolled .navbar__section {
   font-weight: 500;
   color: #253858;
 }
+
 /* END */
 
 /* MEDIA QUERYS */
@@ -486,4 +473,3 @@ body.scrolled .navbar__section {
 }
 
 /* END */
-
