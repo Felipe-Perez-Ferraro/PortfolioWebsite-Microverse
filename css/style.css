@@ -387,7 +387,7 @@ body {
 
   /* MAIN SECTION */
   .main__section {
-    background-image: url(../assets/headerdesktop.png);
+    background-image: url(.././assets/headerdesktop.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
