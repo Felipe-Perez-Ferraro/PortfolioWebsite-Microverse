@@ -22,3 +22,14 @@ for (let i = 0; i < workButton.length; i++) {
 aboutButton.addEventListener('click', ()=> {
     aboutButton.classList.toggle('press');
 })
+
+
+window.onscroll = ()=> scrollFun();
+
+const scrollFun = ()=> {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.body.classList.add("scroll");
+  } else {
+    document.body.classList.remove("scroll");
+  }
+}
