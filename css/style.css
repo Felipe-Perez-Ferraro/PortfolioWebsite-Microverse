@@ -62,7 +62,7 @@ body {
 /* MAIN SECTION */
 .main__section {
   background-color: #fff;
-  background-image: url(/assets/headermobile.png);
+  background-image: url(./assets/headermobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -387,7 +387,7 @@ body {
 
   /* MAIN SECTION */
   .main__section {
-    background-image: url(/assets/headerdesktop.png);
+    background-image: url(./assets/headerdesktop.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
