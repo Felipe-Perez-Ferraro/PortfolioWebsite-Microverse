@@ -76,25 +76,21 @@ body {
   justify-content: center;
   max-width: 327px;
   margin: 0 auto;
+  gap: 12px;
 }
 
 .main__title {
   font-size: 40px;
   font-weight: 700;
   color: var(--primaryColor);
-  margin-bottom: 12px;
 }
 
 .main__paragraph {
   font-size: 16px;
   font-weight: 400;
   color: var(--secondaryColor);
-  margin-bottom: 12px;
 }
 
-.main__spam {
-  margin-bottom: 12px;
-}
 
 .main__callToAction {
   text-decoration: none;
@@ -131,7 +127,7 @@ body {
   flex-direction: column;
   max-width: 327px;
   margin: 0 auto;
-  border: 2px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
   border-radius: 16px;
   padding: 16px;
   gap: 12px;
@@ -209,7 +205,20 @@ body {
   color: var(--thirdColor);
   font-size: 17px;
   font-weight: 500;
+  transition: .5s ease;
 }
+
+.work__button:hover {
+  background-color: var(--thirdColor);
+  color: #fff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.work__button.press {
+  background: #2230D2;
+  color: #fff;
+}
+
 
 /* END */
 
@@ -273,6 +282,17 @@ body {
   font-size: 17px;
   font-weight: 500;
   width: 49%;
+}
+
+.about__button:hover {
+  background-color: var(--thirdColor);
+  color: #fff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.about__button.press {
+  background: #2230D2;
+  color: #fff;
 }
 
 .about__abilities {
