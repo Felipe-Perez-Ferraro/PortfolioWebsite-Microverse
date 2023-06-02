@@ -30,6 +30,19 @@ body {
   justify-content: center;
 }
 
+body.scroll .navbar__section {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: none;
+  background: #fff;
+  transition: .3s ease;
+}
+
 .navbar__section {
   height: 48px;
   display: flex;
@@ -117,7 +130,7 @@ body {
 
 /* WORKS SECTION */
 .work__section {
-  margin-top: 114px;
+  padding-top: 114px;
   display: grid;
   row-gap: 88px;
 }
@@ -415,10 +428,6 @@ body {
   .main__container {
     height: calc(100vh - 72px);
     max-width: 680px;
-  }
-
-  .main__callToAction:hover {
-    color: var(--secondaryColor);
   }
 
   .fa-brands:hover {
