@@ -195,6 +195,7 @@ body.scroll .navbar__section {
   display: flex;
   gap: 8px;
   list-style: none;
+  float: right;
 }
 
 .work__language__item {
