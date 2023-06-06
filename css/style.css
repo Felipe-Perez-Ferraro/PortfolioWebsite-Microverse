@@ -395,7 +395,8 @@ body.scroll .navbar__section {
   color: #fff;
 }
 
-.contact__paragraph {
+/* ESTA PARTE LA COMMITEA EDU */
+/* .contact__paragraph {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
@@ -422,7 +423,9 @@ body.scroll .navbar__section {
 .contact__form__textarea {
   resize: none;
   font-size: 15px;
-}
+} */
+
+/**/
 
 .contact__form__submit {
   cursor: pointer;
