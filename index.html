@@ -23,7 +23,7 @@
                         <a href="#about" class="navbar__links">About</a>
                     </li>
                     <li class="navbar__list">
-                        <a href="#" class="navbar__links">Contact</a>
+                        <a href="#contact__section" class="navbar__links">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -237,6 +237,60 @@
     </section>
     <!-- END -->
 
+    <!-- CONTACT SECTION -->
+    <section id="contact__section" class="contact__section">
+        <article class="contact__container">
+            <div class="contact__text">
+                <h2 class="contact__title">
+                    Contact me
+                </h2>
+                <p class="contact__paragraph">
+                    If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
+                    I'd love to help with it!
+                </p>
+            </div>
+            
+            <form 
+                action="https://formspree.io/f/myyaqdlr"
+                method="post"
+                class="contact__form"
+                id="contact__form"
+                >
+                <input 
+                    type="text" 
+                    name="name"
+                    class="contact__form__inpt" 
+                    placeholder="Write your name..." 
+                    maxlength="30" 
+                    required
+                >   
+                <input 
+                    type="email" 
+                    name="email"
+                    class="contact__form__inpt" 
+                    placeholder="Write your mail..." 
+                    required
+                >
+                <textarea 
+                    form="contact__form" 
+                    name="message"
+                    class="contact__form__textarea contact__form__inpt" 
+                    maxlength="500" 
+                    placeholder="Write your message here..." 
+                    rows="3" 
+                    required
+                >
+                </textarea>
+                <input 
+                    type="submit" 
+                    value="Get in touch" 
+                    class="contact__form__submit"
+                >
+            </form>
+        </article>
+    </section>
+    <!-- END -->
+    
     <script src="./js/main.js"></script>
 </body>
 </html>
