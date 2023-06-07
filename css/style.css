@@ -43,13 +43,14 @@ body {
 body.scroll .navbar__section {
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 24px;
   width: 100%;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  max-width: none;
   background: #fff;
+  max-width: none;
   transition: 0.3s ease;
 }
 
@@ -75,7 +76,7 @@ body.scroll .navbar__section {
 /* MAIN SECTION */
 .main__section {
   background-color: #fff;
-  background-image: url(.././assets/headermobile.png);
+  background-image: url(.././assets/mobile/headermobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -137,7 +138,7 @@ body.scroll .navbar__section {
 .work__description {
   display: flex;
   flex-direction: column;
-  max-width: 327px;
+  max-width: 328px;
   margin: 0 auto;
   border: 1px solid var(--borderColor);
   border-radius: 16px;
@@ -147,11 +148,27 @@ body.scroll .navbar__section {
 }
 
 .work__image__container {
-  max-width: 310px;
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.work__image {
-  width: 100%;
+.tonic {
+  background-image: url(.././assets/tonic.png);
+}
+
+.multi {
+  background-image: url(.././assets/multi.png);
+}
+
+.facebook {
+  background-image: url(.././assets/facebook.png);
+}
+
+.uber {
+  background-image: url(.././assets/uber.png);
 }
 
 .work__features__container {
@@ -194,6 +211,10 @@ body.scroll .navbar__section {
   display: flex;
   gap: 8px;
   list-style: none;
+}
+
+.ruby :nth-child(2) {
+  display: none;
 }
 
 .work__language__item {
@@ -366,14 +387,14 @@ body.scroll .navbar__section {
 
 /* CONTACT SECTION */
 .contact__section {
-  background-image: url(.././assets/contact-me.png);
+  background-image: url(.././assets/mobile/contact-me-mobile.png);
   background-size: cover;
   background-color: #fff;
   padding-top: 21px;
 }
 
 .contact__container {
-  background-image: url(.././assets/contact\ form\ shapes-mobile.png);
+  background-image: url(.././assets/mobile/contact-shapes-mobile.png);
   background-repeat: no-repeat;
   background-position-x: right;
   padding-top: 89px;
@@ -455,9 +476,14 @@ body.scroll .navbar__section {
 /* MEDIA QUERYS */
 @media screen and (min-width: 768px) {
   /* HEADER SECTION */
+  body.scroll .navbar__section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 74px;
+  }
   .navbar__section {
     height: 72px;
-    max-width: 700px;
+    max-width: 620px;
   }
 
   .navbar__section .navbar__menu {
@@ -506,14 +532,14 @@ body.scroll .navbar__section {
 
   /* MAIN SECTION */
   .main__section {
-    background-image: url(.././assets/headerdesktop.png);
+    background-image: url(.././assets/desktop/headerdesktop.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
 
   .main__container {
     height: calc(100vh - 72px);
-    max-width: 680px;
+    max-width: 620px;
   }
 
   .fa-brands:hover {
@@ -522,6 +548,97 @@ body.scroll .navbar__section {
   }
 
   /* END */
+
+  /* WORKS SECTION */
+  .work__section {
+    row-gap: 142px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .work__description {
+    flex-direction: row;
+    max-width: 720px;
+    width: 100%;
+  }
+
+  .work__description__reverse {
+    flex-direction: row-reverse;
+  }
+
+  .work__image__container {
+    background-size: cover;
+  }
+
+  .work__features__container {
+    gap: 16px;
+    max-width: 360px;
+  }
+
+  .work__title {
+    font-size: 30px;
+  }
+
+  .work__features__item {
+    font-size: 11px;
+  }
+
+  .work__paragraph {
+    font-size: 13px;
+  }
+
+  .ruby :nth-child(2) {
+    display: block;
+  }
+
+  .work__language__item {
+    font-size: 10px;
+  }
+
+  .work__button {
+    font-size: 15px;
+  }
+
+  /* END */
+
+  /* ABOUT SECTION */
+.about__section {
+  margin-top: 114px;
+  background-color: #fff;
+  border-radius: 0 15% 0 0;
+}
+
+.about__container {
+  padding: 114px 0;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.about__information {
+  max-width: none;
+  width: 100%;
+}
+
+.about__abilities {
+  padding-top: 0;
+  width: 100%;
+}
+
+/* END */
+
+/* CONTACT SECTION */
+.contact__section {
+  background-image: url(.././assets/desktop/contact-form-background-desktop.png);
+}
+
+.contact__container {
+  background-image: url(.././assets/desktop/contact-form-shapes-desktop.png);
+  background-size: contain;
+}
+
+/* END */
 }
 
 @media screen and (min-width: 1024px) {
@@ -554,6 +671,7 @@ body.scroll .navbar__section {
   }
 
   /* END */
+
 }
 
 @media screen and (min-width: 1440px) {
