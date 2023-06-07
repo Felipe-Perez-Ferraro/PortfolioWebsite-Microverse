@@ -481,6 +481,7 @@ body.scroll .navbar__section {
     justify-content: space-between;
     padding: 0 74px;
   }
+  
   .navbar__section {
     height: 72px;
     max-width: 620px;
@@ -644,14 +645,14 @@ body.scroll .navbar__section {
 @media screen and (min-width: 1024px) {
   /* HEADER SECTION */
   .navbar__section {
-    max-width: 892px;
+    max-width: 870px;
   }
 
   /* END */
 
   /* MAIN SECTION */
   .main__container {
-    max-width: 892px;
+    max-width: 870px;
   }
 
   .main__title {
@@ -672,10 +673,101 @@ body.scroll .navbar__section {
 
   /* END */
 
+  /* WORKS SECTION */
+.work__section {
+  padding-top: 142px;
+  display: grid;
+  row-gap: 142px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.work__description {
+  display: flex;
+  padding: 24px;
+  max-width: 900px;
+}
+
+.work__description:hover {
+  filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+}
+
+.work__image__container {
+  background-size: cover;
+  max-width: 450px;
+}
+
+.work__features__container {
+  max-width: 450px;
+}
+
+.ruby :nth-child(2) {
+  display: block;
+}
+
+/* END */
+
+/* ABOUT SECTION */
+.about__section {
+  margin-top: 114px;
+  background-color: #fff;
+  border-radius: 0 15% 0 0;
+}
+
+.about__container {
+  max-width: 900px;
+}
+
+.about__information {
+  max-width: 450px;
+}
+
+.about__abilities {
+  padding: 0;
+  max-width: 450px;
+}
+
+.about__list__container {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about__language {
+  flex-direction: column;
+  gap: 0;
+}
+
+/* END */
+
+/* CONTACT SECTION */
+.contact__section {
+  background-image: url(.././assets/desktop/contact-form-background-desktop.png);
+}
+
+.contact__container {
+  background-image: url(.././assets/desktop/contact-form-shapes-desktop.png);
+  background-size: contain;
+  background-position: top;
+}
+
+.contact__text {
+  max-width: 440px;
+}
+
+.contact__form {
+  max-width: 440px;
+}
+
+/* END */
+
 }
 
 @media screen and (min-width: 1440px) {
   /* HEADER SECTION */
+  body.scroll .navbar__section {
+    padding: 0 220px;
+  }
+
   .navbar__section {
     max-width: 1000px;
   }
@@ -704,6 +796,85 @@ body.scroll .navbar__section {
   }
 
   /* END */
+
+  /* WORK SECTION */
+  .work__section {
+    max-width: 1200px;
+  }
+  
+  .work__description {
+    max-width: 1200px;
+    padding: 22px;
+  }
+  
+  .work__image__container {
+    height: 100%;
+    max-width: 600px;
+  }
+  
+  .work__features__container {
+    gap: 20px;
+    max-width: 600px;
+  }
+  
+  .work__title {
+    font-size: 40px;
+  }
+  
+  .work__features {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .work__features__item {
+    font-size: 18px;
+  }
+  
+  .work__paragraph {
+    margin-top: 12px;
+    font-size: 17px;
+  }
+  
+  .work__list__container {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+  }
+  
+  .ruby :nth-child(2) {
+    display: block;
+  }
+
+  .work__button {
+    margin-top: 40px;
+  }
+  
+  /* END */
+
+  /* ABOUT SECTION */
+.about__container {
+  max-width: 1200px;
+}
+
+.about__information {
+  max-width: 600px;
+}
+
+.about__abilities {
+  max-width: 600px;
+}
+
+/* END */
+
+/* CONTACT SECTION */
+.contact__text {
+  max-width: 500px;
+}
+
+.contact__form {
+  max-width: 500px;
+}
+  
 }
 
 /* END */
