@@ -476,15 +476,15 @@ body.scroll .navbar__section {
 /* MEDIA QUERYS */
 @media screen and (min-width: 768px) {
   /* HEADER SECTION */
+  .navbar__section {
+    height: 72px;
+    max-width: 620px;
+  }
+
   body.scroll .navbar__section {
     display: flex;
     justify-content: space-between;
     padding: 0 74px;
-  }
-  
-  .navbar__section {
-    height: 72px;
-    max-width: 620px;
   }
 
   .navbar__section .navbar__menu {
@@ -603,43 +603,43 @@ body.scroll .navbar__section {
   /* END */
 
   /* ABOUT SECTION */
-.about__section {
-  margin-top: 114px;
-  background-color: #fff;
-  border-radius: 0 15% 0 0;
-}
+  .about__section {
+    margin-top: 114px;
+    background-color: #fff;
+    border-radius: 0 15% 0 0;
+  }
 
-.about__container {
-  padding: 114px 0;
-  max-width: 720px;
-  margin: 0 auto;
-  display: flex;
-  gap: 20px;
-}
+  .about__container {
+    padding: 114px 0;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+  }
 
-.about__information {
-  max-width: none;
-  width: 100%;
-}
+  .about__information {
+    max-width: none;
+    width: 100%;
+  }
 
-.about__abilities {
-  padding-top: 0;
-  width: 100%;
-}
+  .about__abilities {
+    padding-top: 0;
+    width: 100%;
+  }
 
-/* END */
+  /* END */
 
-/* CONTACT SECTION */
-.contact__section {
-  background-image: url(.././assets/desktop/contact-form-background-desktop.png);
-}
+  /* CONTACT SECTION */
+  .contact__section {
+    background-image: url(.././assets/desktop/contact-form-background-desktop.png);
+  }
 
-.contact__container {
-  background-image: url(.././assets/desktop/contact-form-shapes-desktop.png);
-  background-size: contain;
-}
+  .contact__container {
+    background-image: url(.././assets/desktop/contact-form-shapes-desktop.png);
+    background-size: contain;
+  }
 
-/* END */
+  /* END */
 }
 
 @media screen and (min-width: 1024px) {
@@ -674,102 +674,101 @@ body.scroll .navbar__section {
   /* END */
 
   /* WORKS SECTION */
-.work__section {
-  padding-top: 142px;
-  display: grid;
-  row-gap: 142px;
-  max-width: 900px;
-  margin: 0 auto;
-}
+  .work__section {
+    padding-top: 142px;
+    display: grid;
+    row-gap: 142px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-.work__description {
-  display: flex;
-  padding: 24px;
-  max-width: 900px;
-}
+  .work__description {
+    display: flex;
+    padding: 24px;
+    max-width: 900px;
+  }
 
-.work__description:hover {
-  filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
-}
+  .work__description:hover {
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+  }
 
-.work__image__container {
-  background-size: cover;
-  max-width: 450px;
-}
+  .work__image__container {
+    background-size: cover;
+    max-width: 450px;
+  }
 
-.work__features__container {
-  max-width: 450px;
-}
+  .work__features__container {
+    max-width: 450px;
+  }
 
-.ruby :nth-child(2) {
-  display: block;
-}
+  .ruby :nth-child(2) {
+    display: block;
+  }
 
-/* END */
+  /* END */
 
-/* ABOUT SECTION */
-.about__section {
-  margin-top: 114px;
-  background-color: #fff;
-  border-radius: 0 15% 0 0;
-}
+  /* ABOUT SECTION */
+  .about__section {
+    margin-top: 114px;
+    background-color: #fff;
+    border-radius: 0 15% 0 0;
+  }
 
-.about__container {
-  max-width: 900px;
-}
+  .about__container {
+    max-width: 900px;
+  }
 
-.about__information {
-  max-width: 450px;
-}
+  .about__information {
+    max-width: 450px;
+  }
 
-.about__abilities {
-  padding: 0;
-  max-width: 450px;
-}
+  .about__abilities {
+    padding: 0;
+    max-width: 450px;
+  }
 
-.about__list__container {
-  flex-direction: row;
-  justify-content: space-around;
-}
+  .about__list__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-.about__language {
-  flex-direction: column;
-  gap: 0;
-}
+  .about__language {
+    flex-direction: column;
+    gap: 0;
+  }
 
-/* END */
+  /* END */
 
-/* CONTACT SECTION */
-.contact__section {
-  background-image: url(.././assets/desktop/contact-form-background-desktop.png);
-}
+  /* CONTACT SECTION */
+  .contact__section {
+    background-image: url(.././assets/desktop/contact-form-background-desktop.png);
+  }
 
-.contact__container {
-  background-image: url(.././assets/desktop/contact-form-shapes-desktop.png);
-  background-size: contain;
-  background-position: top;
-}
+  .contact__container {
+    background-image: url(.././assets/desktop/contact-form-shapes-desktop.png);
+    background-size: contain;
+    background-position: top;
+  }
 
-.contact__text {
-  max-width: 440px;
-}
+  .contact__text {
+    max-width: 440px;
+  }
 
-.contact__form {
-  max-width: 440px;
-}
+  .contact__form {
+    max-width: 440px;
+  }
 
-/* END */
-
+  /* END */
 }
 
 @media screen and (min-width: 1440px) {
   /* HEADER SECTION */
-  body.scroll .navbar__section {
-    padding: 0 220px;
-  }
-
   .navbar__section {
     max-width: 1000px;
+  }
+
+  body.scroll .navbar__section {
+    padding: 0 220px;
   }
 
   /* END */
@@ -801,46 +800,46 @@ body.scroll .navbar__section {
   .work__section {
     max-width: 1200px;
   }
-  
+
   .work__description {
     max-width: 1200px;
     padding: 22px;
   }
-  
+
   .work__image__container {
     height: 100%;
     max-width: 600px;
   }
-  
+
   .work__features__container {
     gap: 20px;
     max-width: 600px;
   }
-  
+
   .work__title {
     font-size: 40px;
   }
-  
+
   .work__features {
     display: flex;
     gap: 12px;
   }
-  
+
   .work__features__item {
     font-size: 18px;
   }
-  
+
   .work__paragraph {
     margin-top: 12px;
     font-size: 17px;
   }
-  
+
   .work__list__container {
     display: flex;
     gap: 8px;
     list-style: none;
   }
-  
+
   .ruby :nth-child(2) {
     display: block;
   }
@@ -848,33 +847,32 @@ body.scroll .navbar__section {
   .work__button {
     margin-top: 40px;
   }
-  
+
   /* END */
 
   /* ABOUT SECTION */
-.about__container {
-  max-width: 1200px;
-}
+  .about__container {
+    max-width: 1200px;
+  }
 
-.about__information {
-  max-width: 600px;
-}
+  .about__information {
+    max-width: 600px;
+  }
 
-.about__abilities {
-  max-width: 600px;
-}
+  .about__abilities {
+    max-width: 600px;
+  }
 
-/* END */
+  /* END */
 
-/* CONTACT SECTION */
-.contact__text {
-  max-width: 500px;
-}
+  /* CONTACT SECTION */
+  .contact__text {
+    max-width: 500px;
+  }
 
-.contact__form {
-  max-width: 500px;
-}
-  
+  .contact__form {
+    max-width: 500px;
+  }
 }
 
 /* END */
