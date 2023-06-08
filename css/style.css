@@ -684,7 +684,8 @@ body.scroll .navbar__section {
 
   .work__description {
     display: flex;
-    padding: 24px;
+    gap: 20px;
+    padding: 18px;
     max-width: 900px;
   }
 
@@ -695,10 +696,44 @@ body.scroll .navbar__section {
   .work__image__container {
     background-size: cover;
     max-width: 450px;
+    height: 400px;
+    border-radius: 8px;
   }
 
   .work__features__container {
     max-width: 450px;
+  }
+
+  .work__title {
+    font-size: 40px;
+  }
+
+  .work__features {
+    display: flex;
+    gap: 12px;
+  }
+
+  .work__features__item {
+    font-size: 18px;
+  }
+
+  .work__paragraph {
+    margin-top: 12px;
+    font-size: 17px;
+  }
+
+  .work__list__container {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+  }
+
+  .ruby :nth-child(2) {
+    display: block;
+  }
+
+  .work__button {
+    margin-top: 40px;
   }
 
   .ruby :nth-child(2) {
@@ -803,35 +838,18 @@ body.scroll .navbar__section {
 
   .work__description {
     max-width: 1200px;
-    padding: 22px;
+    padding: 20px;
   }
 
   .work__image__container {
     height: 100%;
     max-width: 600px;
+    height: 450px;
   }
 
   .work__features__container {
     gap: 20px;
     max-width: 600px;
-  }
-
-  .work__title {
-    font-size: 40px;
-  }
-
-  .work__features {
-    display: flex;
-    gap: 12px;
-  }
-
-  .work__features__item {
-    font-size: 18px;
-  }
-
-  .work__paragraph {
-    margin-top: 12px;
-    font-size: 17px;
   }
 
   .work__list__container {
@@ -842,10 +860,6 @@ body.scroll .navbar__section {
 
   .ruby :nth-child(2) {
     display: block;
-  }
-
-  .work__button {
-    margin-top: 40px;
   }
 
   /* END */
