@@ -625,6 +625,7 @@ body.scroll .navbar__section {
   .contact__submit__container {
     display: flex;
     justify-content: center;
+    margin-bottom: 127px;
   }
 
   /* END */
