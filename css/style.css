@@ -736,10 +736,6 @@ body.scroll .navbar__section {
     margin-top: 40px;
   }
 
-  .ruby :nth-child(2) {
-    display: block;
-  }
-
   /* END */
 
   /* ABOUT SECTION */
@@ -842,7 +838,6 @@ body.scroll .navbar__section {
   }
 
   .work__image__container {
-    height: 100%;
     max-width: 600px;
     height: 450px;
   }
