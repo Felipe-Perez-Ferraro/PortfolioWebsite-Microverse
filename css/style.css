@@ -604,6 +604,10 @@ body.scroll .navbar__section {
     width: 40%;
   }
 
+  .about__button {
+    width: 57%;
+  }
+
   .about__abilities {
     padding-top: 0;
     width: 60%;
@@ -625,7 +629,7 @@ body.scroll .navbar__section {
   .contact__submit__container {
     display: flex;
     justify-content: center;
-    margin-bottom: 127px;
+    padding-bottom: 127px;
   }
 
   /* END */
@@ -723,6 +727,10 @@ body.scroll .navbar__section {
   .about__information {
     width: 40%;
     max-width: none;
+  }
+
+  .about__button {
+    width: 42%;
   }
 
   .about__abilities {
@@ -859,6 +867,10 @@ body.scroll .navbar__section {
   /* ABOUT SECTION */
   .about__container {
     max-width: 1280px;
+  }
+
+  .about__button {
+    width: 32%;
   }
 
   /* END */

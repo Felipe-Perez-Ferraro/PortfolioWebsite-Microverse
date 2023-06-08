@@ -12,10 +12,10 @@
     <!-- HEADER SECTION-->
     <section id="header__section" class="header__section">
         <header class="navbar__section">
-            <a href="#header__section" class="navbar__logo">Logo</a>
+            <a href="#header__section" class="navbar__logo ">Logo</a>
             <nav class="navbar">
-                <i class="navbar__menu fa-solid fa-bars"></i>
-                <ul class="navbar__links__container">
+                <i class="navbar__menu fa-solid fa-bars "></i>
+                <ul class="navbar__links__container ">
                     <li class="navbar__list">
                         <a href="#portfolio" class="navbar__links">Portfolio</a>
                     </li>
@@ -34,14 +34,13 @@
     <!-- MAIN SECTION -->
     <main class="main__section">
         <section class="main__container">
-            <h1 class="main__title">I'm Alexandra. <br> Glad to see you!</h1>
-            <p class="main__paragraph">
+            <h1 class="main__title gs_reveal">I'm Alexandra. <br> Glad to see you!</h1>
+            <p class="main__paragraph gs_reveal">
                 I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
             </p>
-            <h2 href="#" class="main__callToAction">LET'S CONNECT</h2>
-            
+            <h2 href="#" class="main__callToAction gs_reveal">LET'S CONNECT</h2>
 
-            <ul class="main__socialMedia">
+            <ul class="main__socialMedia gs_reveal">
                 <li class="main__socialMedia__container">
                     <a href="" class="main__socialMedia__links">
                         <i class="fa-brands fa-twitter"></i>
@@ -69,7 +68,7 @@
 
     <!-- WORKS SECTION -->
     <section id="portfolio" class="work__section">
-        <article class="work__description">
+        <article class="work__description gs_reveal gs_reveal_fromLeft">
             <figure class="work__image__container tonic">
                 <img src="./assets/tonic.png" class="work__image" alt="">
             </figure>
@@ -92,7 +91,7 @@
             </div>
         </article>
 
-        <article class="work__description work__description__reverse">
+        <article class="work__description work__description__reverse gs_reveal_fromRight gs_reveal">
             <figure class="work__image__container multi">
                 <img src="./assets/multi.png" alt="second work image" class="work__image"> 
             </figure>
@@ -116,7 +115,7 @@
             </div>
         </article>
         
-        <article class="work__description">
+        <article class="work__description gs_reveal gs_reveal_fromLeft">
             <figure class="work__image__container facebook">
                 <img src="./assets/facebook.png" alt="third work image" class="work__image"> 
             </figure>
@@ -140,7 +139,7 @@
             </div>
         </article>
         
-        <article class="work__description work__description__reverse">
+        <article class="work__description work__description__reverse gs_reveal gs_reveal_fromRight">
             <figure class="work__image__container uber">
                 <img src="./assets/uber.png" alt="third work image" class="work__image"> 
             </figure>
@@ -167,9 +166,9 @@
     <!-- END -->
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="about__section">
+    <section id="about" class="about__section ">
         <article class="about__container">
-            <div class="about__information">
+            <div class="about__information gs_reveal gs_reveal_fromLeft">
                 <h2 class="about__title">About Myself</h2>
                 <p class="about__paragraph">
                     Hello I'm a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
@@ -201,7 +200,7 @@
                 <button class="about__button">Get my resume</button>
             </div>
 
-            <div class="about__abilities">
+            <div class="about__abilities gs_reveal gs_reveal_fromRight">
                 <ul class="about__abilities__container">
                     <li class="about__abilities__title">Languages</li>
                     <li class="abilities__image__container">
@@ -266,61 +265,65 @@
     <!-- CONTACT SECTION -->
     <section id="contact__section" class="contact__section">
         <article class="contact__container">
-            <div class="contact__text">
-                <h2 class="contact__title">
-                    Contact me
-                </h2>
-                <p class="contact__paragraph">
-                    If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
-                    I'd love to help with it!
-                </p>
-            </div>
-            
-            <form 
-                action="https://formspree.io/f/myyaqdlr"
-                method="post"
-                class="contact__form"
-                id="contact__form"
-                >
-                <input 
-                    type="text" 
-                    name="name"
-                    class="contact__form__inpt" 
-                    placeholder="Write your name..." 
-                    maxlength="30" 
-                    required
-                >   
-                <input 
-                    type="email" 
-                    name="email"
-                    class="contact__form__inpt" 
-                    placeholder="Write your mail..." 
-                    required
-                >
-                <textarea 
-                    form="contact__form" 
-                    name="message"
-                    class="contact__form__textarea contact__form__inpt" 
-                    maxlength="500" 
-                    placeholder="Write your message here..." 
-                    rows="4"
-                    required
-                >
-                </textarea>
-                <div class="contact__submit__container">
-                    <input 
-                    type="submit" 
-                    value="Get in touch" 
-                    class="contact__form__submit"
-                    required
-                    >
+            <div class="contact__animate__container gs_reveal">
+                <div class="contact__text">
+                    <h2 class="contact__title">
+                        Contact me
+                    </h2>
+                    <p class="contact__paragraph">
+                        If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
+                        I'd love to help with it!
+                    </p>
                 </div>
-            </form>
+                
+                <form 
+                    action="https://formspree.io/f/myyaqdlr"
+                    method="post"
+                    class="contact__form"
+                    id="contact__form"
+                    >
+                    <input 
+                        type="text" 
+                        name="name"
+                        class="contact__form__inpt" 
+                        placeholder="Write your name..." 
+                        maxlength="30" 
+                        required
+                    >   
+                    <input 
+                        type="email" 
+                        name="email"
+                        class="contact__form__inpt" 
+                        placeholder="Write your mail..." 
+                        required
+                    >
+                    <textarea 
+                        form="contact__form" 
+                        name="message"
+                        class="contact__form__textarea contact__form__inpt" 
+                        maxlength="500" 
+                        placeholder="Write your message here..." 
+                        rows="4"
+                        required
+                    >
+                    </textarea>
+                    <div class="contact__submit__container">
+                        <input 
+                        type="submit" 
+                        value="Get in touch" 
+                        class="contact__form__submit"
+                        required
+                        >
+                    </div>
+                </form>
+            </div>            
         </article>
     </section>
     <!-- END -->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
 </body>
 </html>
