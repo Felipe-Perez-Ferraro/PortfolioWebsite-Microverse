@@ -148,27 +148,12 @@ body.scroll .navbar__section {
 }
 
 .work__image__container {
-  height: 300px;
   width: 100%;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  max-width: 328px;
 }
 
-.tonic {
-  background-image: url(.././assets/tonic.png);
-}
-
-.multi {
-  background-image: url(.././assets/multi.png);
-}
-
-.facebook {
-  background-image: url(.././assets/facebook.png);
-}
-
-.uber {
-  background-image: url(.././assets/uber.png);
+.work__image {
+  width: 100%;
 }
 
 .work__features__container {
@@ -230,7 +215,7 @@ body.scroll .navbar__section {
   cursor: pointer;
   background: #fff;
   border: 1px solid var(--buttonColor);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 12px;
   margin-top: 6px;
   margin-bottom: 12px;
@@ -567,10 +552,6 @@ body.scroll .navbar__section {
     flex-direction: row-reverse;
   }
 
-  .work__image__container {
-    background-size: cover;
-  }
-
   .work__features__container {
     gap: 16px;
     max-width: 360px;
@@ -598,6 +579,7 @@ body.scroll .navbar__section {
 
   .work__button {
     font-size: 15px;
+    width: 33%;
   }
 
   /* END */
@@ -619,12 +601,13 @@ body.scroll .navbar__section {
 
   .about__information {
     max-width: none;
-    width: 100%;
+    width: 40%;
   }
 
   .about__abilities {
     padding-top: 0;
-    width: 100%;
+    width: 60%;
+    max-width: none;
   }
 
   /* END */
@@ -637,6 +620,11 @@ body.scroll .navbar__section {
   .contact__container {
     background-image: url(.././assets/desktop/contact-form-shapes-desktop.png);
     background-size: contain;
+  }
+
+  .contact__submit__container {
+    display: flex;
+    justify-content: center;
   }
 
   /* END */
@@ -678,15 +666,15 @@ body.scroll .navbar__section {
     padding-top: 142px;
     display: grid;
     row-gap: 142px;
-    max-width: 900px;
+    max-width: 980px;
     margin: 0 auto;
   }
 
   .work__description {
     display: flex;
-    gap: 20px;
+    gap: 46px;
     padding: 18px;
-    max-width: 900px;
+    max-width: 980px;
   }
 
   .work__description:hover {
@@ -694,32 +682,18 @@ body.scroll .navbar__section {
   }
 
   .work__image__container {
-    background-size: cover;
+    background-size: contain;
     max-width: 450px;
-    height: 400px;
     border-radius: 8px;
   }
 
   .work__features__container {
     max-width: 450px;
-  }
-
-  .work__title {
-    font-size: 40px;
-  }
-
-  .work__features {
-    display: flex;
-    gap: 12px;
-  }
-
-  .work__features__item {
-    font-size: 18px;
+    padding: 24px;
   }
 
   .work__paragraph {
-    margin-top: 12px;
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .work__list__container {
@@ -728,12 +702,8 @@ body.scroll .navbar__section {
     list-style: none;
   }
 
-  .ruby :nth-child(2) {
-    display: block;
-  }
-
   .work__button {
-    margin-top: 40px;
+    width: 28%;
   }
 
   /* END */
@@ -746,21 +716,23 @@ body.scroll .navbar__section {
   }
 
   .about__container {
-    max-width: 900px;
+    max-width: 980px;
   }
 
   .about__information {
-    max-width: 450px;
+    width: 40%;
+    max-width: none;
   }
 
   .about__abilities {
     padding: 0;
-    max-width: 450px;
+    width: 60%;
+    max-width: none;
   }
 
   .about__list__container {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: left;
   }
 
   .about__language {
@@ -787,6 +759,10 @@ body.scroll .navbar__section {
 
   .contact__form {
     max-width: 440px;
+  }
+
+  .contact__form__submit {
+    width: 29%;
   }
 
   /* END */
@@ -829,22 +805,33 @@ body.scroll .navbar__section {
 
   /* WORK SECTION */
   .work__section {
-    max-width: 1200px;
+    max-width: 1280px;
   }
 
   .work__description {
-    max-width: 1200px;
-    padding: 20px;
+    max-width: 1280px;
+    padding: 24px;
   }
 
   .work__image__container {
     max-width: 600px;
-    height: 450px;
   }
 
   .work__features__container {
     gap: 20px;
-    max-width: 600px;
+    max-width: 550px;
+  }
+
+  .work__title {
+    font-size: 40px;
+  }
+
+  .work__features__item {
+    font-size: 18px;
+  }
+
+  .work__paragraph {
+    font-size: 16px;
   }
 
   .work__list__container {
@@ -853,23 +840,24 @@ body.scroll .navbar__section {
     list-style: none;
   }
 
+  .work__language__item {
+    font-size: 12px;
+  }
+
   .ruby :nth-child(2) {
     display: block;
+  }
+
+  .work__button {
+    font-size: 17px;
+    width: 26%;
   }
 
   /* END */
 
   /* ABOUT SECTION */
   .about__container {
-    max-width: 1200px;
-  }
-
-  .about__information {
-    max-width: 600px;
-  }
-
-  .about__abilities {
-    max-width: 600px;
+    max-width: 1280px;
   }
 
   /* END */
