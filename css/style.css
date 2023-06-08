@@ -43,13 +43,14 @@ body {
 body.scroll .navbar__section {
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 24px;
   width: 100%;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  max-width: none;
   background: #fff;
+  max-width: none;
   transition: 0.3s ease;
 }
 
@@ -75,7 +76,7 @@ body.scroll .navbar__section {
 /* MAIN SECTION */
 .main__section {
   background-color: #fff;
-  background-image: url(.././assets/headermobile.png);
+  background-image: url(.././assets/mobile/headermobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -137,7 +138,7 @@ body.scroll .navbar__section {
 .work__description {
   display: flex;
   flex-direction: column;
-  max-width: 327px;
+  max-width: 328px;
   margin: 0 auto;
   border: 1px solid var(--borderColor);
   border-radius: 16px;
@@ -147,7 +148,8 @@ body.scroll .navbar__section {
 }
 
 .work__image__container {
-  max-width: 310px;
+  width: 100%;
+  max-width: 328px;
 }
 
 .work__image {
@@ -196,6 +198,10 @@ body.scroll .navbar__section {
   list-style: none;
 }
 
+.ruby :nth-child(2) {
+  display: none;
+}
+
 .work__language__item {
   background-color: #ebebff;
   border-radius: 8px;
@@ -209,7 +215,7 @@ body.scroll .navbar__section {
   cursor: pointer;
   background: #fff;
   border: 1px solid var(--buttonColor);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 12px;
   margin-top: 6px;
   margin-bottom: 12px;
@@ -366,14 +372,14 @@ body.scroll .navbar__section {
 
 /* CONTACT SECTION */
 .contact__section {
-  background-image: url(.././assets/contact-me.png);
+  background-image: url(.././assets/mobile/contact-me-mobile.png);
   background-size: cover;
   background-color: #fff;
   padding-top: 21px;
 }
 
 .contact__container {
-  background-image: url(.././assets/contact\ form\ shapes-mobile.png);
+  background-image: url(.././assets/mobile/contact-shapes-mobile.png);
   background-repeat: no-repeat;
   background-position-x: right;
   padding-top: 89px;
@@ -457,7 +463,13 @@ body.scroll .navbar__section {
   /* HEADER SECTION */
   .navbar__section {
     height: 72px;
-    max-width: 700px;
+    max-width: 620px;
+  }
+
+  body.scroll .navbar__section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 74px;
   }
 
   .navbar__section .navbar__menu {
@@ -506,14 +518,14 @@ body.scroll .navbar__section {
 
   /* MAIN SECTION */
   .main__section {
-    background-image: url(.././assets/headerdesktop.png);
+    background-image: url(.././assets/desktop/headerdesktop.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
 
   .main__container {
     height: calc(100vh - 72px);
-    max-width: 680px;
+    max-width: 620px;
   }
 
   .fa-brands:hover {
@@ -522,19 +534,118 @@ body.scroll .navbar__section {
   }
 
   /* END */
+
+  /* WORKS SECTION */
+  .work__section {
+    row-gap: 142px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .work__description {
+    flex-direction: row;
+    max-width: 720px;
+    width: 100%;
+  }
+
+  .work__description__reverse {
+    flex-direction: row-reverse;
+  }
+
+  .work__features__container {
+    gap: 16px;
+    max-width: 360px;
+  }
+
+  .work__title {
+    font-size: 30px;
+  }
+
+  .work__features__item {
+    font-size: 11px;
+  }
+
+  .work__paragraph {
+    font-size: 13px;
+  }
+
+  .ruby :nth-child(2) {
+    display: block;
+  }
+
+  .work__language__item {
+    font-size: 10px;
+  }
+
+  .work__button {
+    font-size: 15px;
+    width: 33%;
+  }
+
+  /* END */
+
+  /* ABOUT SECTION */
+  .about__section {
+    margin-top: 114px;
+    background-color: #fff;
+    border-radius: 0 15% 0 0;
+  }
+
+  .about__container {
+    padding: 114px 0;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+  }
+
+  .about__information {
+    max-width: none;
+    width: 40%;
+  }
+
+  .about__button {
+    width: 57%;
+  }
+
+  .about__abilities {
+    padding-top: 0;
+    width: 60%;
+    max-width: none;
+  }
+
+  /* END */
+
+  /* CONTACT SECTION */
+  .contact__section {
+    background-image: url(.././assets/desktop/contact-form-background-desktop.png);
+  }
+
+  .contact__container {
+    background-image: url(.././assets/desktop/contact-form-shapes-desktop.png);
+    background-size: contain;
+  }
+
+  .contact__submit__container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 127px;
+  }
+
+  /* END */
 }
 
 @media screen and (min-width: 1024px) {
   /* HEADER SECTION */
   .navbar__section {
-    max-width: 892px;
+    max-width: 870px;
   }
 
   /* END */
 
   /* MAIN SECTION */
   .main__container {
-    max-width: 892px;
+    max-width: 870px;
   }
 
   .main__title {
@@ -554,12 +665,126 @@ body.scroll .navbar__section {
   }
 
   /* END */
+
+  /* WORKS SECTION */
+  .work__section {
+    padding-top: 142px;
+    display: grid;
+    row-gap: 142px;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .work__description {
+    display: flex;
+    gap: 46px;
+    padding: 18px;
+    max-width: 980px;
+  }
+
+  .work__description:hover {
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+  }
+
+  .work__image__container {
+    background-size: contain;
+    max-width: 450px;
+    border-radius: 8px;
+  }
+
+  .work__features__container {
+    max-width: 450px;
+    padding: 24px;
+  }
+
+  .work__paragraph {
+    font-size: 14px;
+  }
+
+  .work__list__container {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+  }
+
+  .work__button {
+    width: 28%;
+  }
+
+  /* END */
+
+  /* ABOUT SECTION */
+  .about__section {
+    margin-top: 114px;
+    background-color: #fff;
+    border-radius: 0 15% 0 0;
+  }
+
+  .about__container {
+    max-width: 980px;
+  }
+
+  .about__information {
+    width: 40%;
+    max-width: none;
+  }
+
+  .about__button {
+    width: 42%;
+  }
+
+  .about__abilities {
+    padding: 0;
+    width: 60%;
+    max-width: none;
+  }
+
+  .about__list__container {
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .about__language {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* END */
+
+  /* CONTACT SECTION */
+  .contact__section {
+    background-image: url(.././assets/desktop/contact-form-background-desktop.png);
+  }
+
+  .contact__container {
+    background-image: url(.././assets/desktop/contact-form-shapes-desktop.png);
+    background-size: contain;
+    background-position: top;
+  }
+
+  .contact__text {
+    max-width: 440px;
+  }
+
+  .contact__form {
+    max-width: 440px;
+  }
+
+  .contact__form__submit {
+    width: 29%;
+  }
+
+  /* END */
 }
 
 @media screen and (min-width: 1440px) {
   /* HEADER SECTION */
   .navbar__section {
     max-width: 1000px;
+  }
+
+  body.scroll .navbar__section {
+    padding: 0 220px;
   }
 
   /* END */
@@ -586,6 +811,78 @@ body.scroll .navbar__section {
   }
 
   /* END */
+
+  /* WORK SECTION */
+  .work__section {
+    max-width: 1280px;
+  }
+
+  .work__description {
+    max-width: 1280px;
+    padding: 24px;
+  }
+
+  .work__image__container {
+    max-width: 600px;
+  }
+
+  .work__features__container {
+    gap: 20px;
+    max-width: 550px;
+  }
+
+  .work__title {
+    font-size: 40px;
+  }
+
+  .work__features__item {
+    font-size: 18px;
+  }
+
+  .work__paragraph {
+    font-size: 16px;
+  }
+
+  .work__list__container {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+  }
+
+  .work__language__item {
+    font-size: 12px;
+  }
+
+  .ruby :nth-child(2) {
+    display: block;
+  }
+
+  .work__button {
+    font-size: 17px;
+    width: 26%;
+  }
+
+  /* END */
+
+  /* ABOUT SECTION */
+  .about__container {
+    max-width: 1280px;
+  }
+
+  .about__button {
+    width: 32%;
+  }
+
+  /* END */
+
+  /* CONTACT SECTION */
+  .contact__text {
+    max-width: 500px;
+  }
+
+  .contact__form {
+    max-width: 500px;
+  }
 }
 
 /* END */
