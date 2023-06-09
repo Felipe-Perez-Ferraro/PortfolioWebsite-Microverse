@@ -60,7 +60,7 @@ body.scroll .navbar__section {
   font-weight: 700;
   color: var(--thirdColor);
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .navbar__logo:hover {
@@ -304,7 +304,7 @@ body.scroll .navbar__section {
   font-size: 17px;
   font-weight: 500;
   width: 49%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .about__button:hover {
