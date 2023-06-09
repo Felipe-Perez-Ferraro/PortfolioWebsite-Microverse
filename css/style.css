@@ -60,6 +60,7 @@ body.scroll .navbar__section {
   font-weight: 700;
   color: var(--thirdColor);
   cursor: pointer;
+
 }
 
 .navbar__menu {
