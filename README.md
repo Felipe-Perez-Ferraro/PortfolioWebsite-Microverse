@@ -59,6 +59,8 @@ After you're finished please remove all the comments and instructions!
 
 **The Portfolio Website** is a project made by HTML and CSS.
 
+<a href="https://www.loom.com/share/221023e4facc42239ffee56ce17ae8ee?sid=b3b97abe-122e-4d79-b062-b8ff0b92b807">Click here</a> to see a video explainig the project
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
