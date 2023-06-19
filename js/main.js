@@ -32,3 +32,28 @@ const scrollFun = () => {
 }
 
 window.onscroll = () => scrollFun()
+
+const toggleMenu = ()=> {
+    const linksContainer = document.getElementById('nabvarLinksContainer')
+    const menuIcon = document.getElementById('menuIcon')
+    
+    if(window.matchMedia('(max-width: 768px)').matches) {
+
+        if(linksContainer.style.display === 'none') {
+            linksContainer.style.display = 'flex'
+            menuIcon.classList.remove('fa-bars')
+            menuIcon.classList.add('fa-times')
+            document.body.style.overflow = 'hidden'
+        } else {
+            linksContainer.style.display = 'none'
+            menuIcon.classList.remove('fa-times')
+            menuIcon.classList.add('fa-bars')
+            document.body.style.overflow = 'scroll'
+        }
+    }
+}
+
+const links = document.querySelectorAll('.navbar__list a')
+for(let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', toggleMenu)
+}
