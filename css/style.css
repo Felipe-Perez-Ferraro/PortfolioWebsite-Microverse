@@ -35,23 +35,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 327px;
-  margin: 0 auto;
   width: 100%;
+  padding: 0 24px;
+  z-index: 1;
 }
 
 body.scroll .navbar__section {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 0 24px;
   width: 100%;
   top: 0;
-  z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background: #fff;
-  max-width: none;
-  transition: 0.3s ease;
 }
 
 .navbar__logo {
@@ -67,13 +63,45 @@ body.scroll .navbar__section {
   color: var(--secondaryColor);
 }
 
-.navbar__menu {
+.fa-bars {
   color: var(--thirdColor);
   font-size: 16px;
 }
 
+.fa-times {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 22px 38px;
+  font-size: 32px;
+  z-index: 11;
+}
+
 .navbar__links__container {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  top: 0;
   display: none;
+  background-color: rgba(50, 70, 255, 0.8);
+  backdrop-filter: blur(6px);
+  flex-direction: column;
+  gap: 40px;
+  padding: 86px 28px;
+  width: 100%;
+  list-style: none;
+}
+
+.navbar__list {
+  z-index: 1111111;
+}
+
+.navbar__links {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
 }
 
 /* END */
@@ -469,13 +497,12 @@ body.scroll .navbar__section {
   /* HEADER SECTION */
   .navbar__section {
     height: 72px;
-    max-width: 620px;
+    padding: 0 74px;
   }
 
   body.scroll .navbar__section {
     display: flex;
     justify-content: space-between;
-    padding: 0 74px;
   }
 
   .navbar__section .navbar__menu {
@@ -484,7 +511,12 @@ body.scroll .navbar__section {
 
   .navbar__links__container {
     display: flex;
+    flex-direction: row;
     gap: 32px;
+    background-color: #fff;
+    position: initial;
+    padding: 0;
+    height: initial;
   }
 
   .navbar__links__container .navbar__list {
@@ -644,10 +676,8 @@ body.scroll .navbar__section {
 @media screen and (min-width: 1024px) {
   /* HEADER SECTION */
   .navbar__section {
-    max-width: 870px;
+    padding: 0 74px;
   }
-
-  /* END */
 
   /* MAIN SECTION */
   .main__container {
@@ -786,10 +816,6 @@ body.scroll .navbar__section {
 @media screen and (min-width: 1440px) {
   /* HEADER SECTION */
   .navbar__section {
-    max-width: 1000px;
-  }
-
-  body.scroll .navbar__section {
     padding: 0 220px;
   }
 
