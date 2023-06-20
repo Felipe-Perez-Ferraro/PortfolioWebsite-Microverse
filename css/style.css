@@ -78,6 +78,21 @@ body.scroll .navbar__section {
   z-index: 11;
 }
 
+.navbar__links__container {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  top: 0;
+  display: none;
+  background-color: rgba(50, 70, 255, 0.8);
+  backdrop-filter: blur(6px);
+  flex-direction: column;
+  gap: 40px;
+  padding: 106px 28px;
+  width: 100%;
+  list-style: none;
+}
+
 .navbar__list {
   z-index: 1111111;
 }
