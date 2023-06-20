@@ -73,8 +73,8 @@ body.scroll .navbar__section {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 62px 38px;
-  font-size: 16px;
+  padding: 22px 38px;
+  font-size: 32px;
   z-index: 11;
 }
 
@@ -88,7 +88,7 @@ body.scroll .navbar__section {
   backdrop-filter: blur(6px);
   flex-direction: column;
   gap: 40px;
-  padding: 106px 28px;
+  padding: 86px 28px;
   width: 100%;
   list-style: none;
 }
