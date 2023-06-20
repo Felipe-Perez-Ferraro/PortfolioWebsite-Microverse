@@ -1,6 +1,5 @@
+// WORK BUTTON SETTINGS
 const workButton = document.getElementsByClassName('work__button')
-const aboutButton = document.querySelector('.about__button')
-
 for (let i = 0; i < workButton.length; i += 1) {
     workButton[i].addEventListener('click', () => {
         if (workButton[i].id === 'work1') {
@@ -19,10 +18,13 @@ for (let i = 0; i < workButton.length; i += 1) {
     })
 }
 
+// ABOUT BUTTON SETTINGS
+const aboutButton = document.querySelector('.about__button')
 aboutButton.addEventListener('click', () => {
     aboutButton.classList.toggle('press')
 })
 
+// SCROLL SETTINGS
 const scrollFun = () => {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.body.classList.add('scroll')
@@ -33,6 +35,7 @@ const scrollFun = () => {
 
 window.onscroll = () => scrollFun()
 
+// MOBILE MENU SETTINGS
 const toggleMenu = ()=> {
     const linksContainer = document.getElementById('nabvarLinksContainer')
     const menuIcon = document.getElementById('menuIcon')
