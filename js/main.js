@@ -6,15 +6,23 @@ for (let i = 0; i < workButton.length; i += 1) {
             workButton[i].classList.toggle('press')
             workButton[1].classList.remove('press')
             workButton[2].classList.remove('press')
+            workButton[3].classList.remove('press')
         } else if (workButton[i].id === 'work2') {
             workButton[i].classList.toggle('press')
             workButton[0].classList.remove('press')
             workButton[2].classList.remove('press')
+            workButton[3].classList.remove('press')
         } else if (workButton[i].id === 'work3') {
             workButton[i].classList.toggle('press')
             workButton[0].classList.remove('press')
             workButton[1].classList.remove('press')
-        }
+            workButton[3].classList.remove('press')
+        } else if (workButton[i].id === 'work4') {
+            workButton[i].classList.toggle('press')
+            workButton[0].classList.remove('press')
+            workButton[1].classList.remove('press')
+            workButton[2].classList.remove('press')
+        } 
     })
 }
 
