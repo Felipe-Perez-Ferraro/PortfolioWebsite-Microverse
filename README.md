@@ -45,6 +45,11 @@ After you're finished please remove all the comments and instructions!
   - [🚀 Live Demo](#live-demo)
 - 💻 [Getting Started](#getting-started)
     - [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -107,6 +112,34 @@ Clone this repository to your desired folder:
   cd my-folder
   
   git clone https://github.com/Feliperto/PortfolioWebsite-Microverse.git
+  
+
+### Prerequisites
+
+In order to run this project you need:
+
+A computer or mobile phone
+
+
+### Install
+
+Install this project with:
+
+Following the SETUP steps
+
+
+### Usage
+
+To run the project, execute the following command:
+
+npm run test .
+
+
+### Deployment
+
+You can deploy this project using:
+
+Using the link of the code to clone it
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
