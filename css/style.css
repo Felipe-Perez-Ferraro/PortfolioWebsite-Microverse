@@ -301,7 +301,7 @@ body.scroll .navbar__section {
 
 .popup__xmark {
   font-size: 22px;
-  color: #67798E;
+  color: #67798e;
   position: initial;
   padding: 0;
   padding-right: 20px;
@@ -363,12 +363,8 @@ body.scroll .navbar__section {
   display: flex;
   gap: 8px;
   list-style: none;
-  border-bottom: 1px solid #EBECF0;
+  border-bottom: 1px solid #ebecf0;
   padding-bottom: 20px;
-}
-
-.ruby :nth-child(2) {
-  display: none;
 }
 
 .popup__language__item {
@@ -409,7 +405,6 @@ body.scroll .navbar__section {
   background: #2230d2;
   color: #fff;
 }
-
 
 /* END */
 
@@ -938,7 +933,7 @@ body.scroll .navbar__section {
     padding: 6px;
     font-size: 15px;
   }
-  
+
   /* END */
 
   /* ABOUT SECTION */
@@ -1110,7 +1105,7 @@ body.scroll .navbar__section {
   }
 
   .popup__list__container {
-    padding-right: 56px;    
+    padding-right: 56px;
   }
 
   .popup__features__container {
