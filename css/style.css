@@ -282,7 +282,7 @@ body.scroll .navbar__section {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 95vw;
-  height: 88vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -297,6 +297,15 @@ body.scroll .navbar__section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.popup__xmark {
+  font-size: 22px;
+  color: #67798E;
+  position: initial;
+  padding: 0;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 .popup__title {
