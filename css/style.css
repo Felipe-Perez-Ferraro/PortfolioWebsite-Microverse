@@ -299,15 +299,6 @@ body.scroll .navbar__section {
   justify-content: space-between;
 }
 
-.popup__xmark {
-  font-size: 22px;
-  color: #67798e;
-  position: initial;
-  padding: 0;
-  padding-right: 20px;
-  cursor: pointer;
-}
-
 .popup__title {
   font-size: 32px;
   font-weight: 700;
@@ -405,7 +396,7 @@ body.scroll .navbar__section {
   background: #2230d2;
   color: #fff;
 }
-
+ 
 /* END */
 
 /* ABOUT SECTION */
