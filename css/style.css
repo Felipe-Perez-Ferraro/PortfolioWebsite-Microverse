@@ -1051,7 +1051,7 @@ body.scroll .navbar__section {
   }
 
   .work__features__item {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .work__paragraph {
@@ -1079,12 +1079,12 @@ body.scroll .navbar__section {
 
   /* POPUP STYLES */
   .popup__description {
-    width: 55vw;
-    height: 97vh;
+    width: 58vw;
+    height: 96vh;
   }
 
   .popup__image {
-    max-height: 480px;
+    max-height: 440px;
   }
 
   .popup__paragraph__mobile {
@@ -1094,7 +1094,6 @@ body.scroll .navbar__section {
   .popup__paragraph__desktop {
     display: block;
     width: 72%;
-    text-align: justify;
   }
 
   .popup__bottom__container {
@@ -1102,11 +1101,12 @@ body.scroll .navbar__section {
   }
 
   .popup__list__container {
-    flex-wrap: wrap;
+    padding-right: 56px;    
   }
 
   .popup__features__container {
     flex-direction: row;
+    gap: 36px;
   }
 
   .about__btn__container {
@@ -1116,8 +1116,12 @@ body.scroll .navbar__section {
   .popup__button {
     margin-top: 20px;
     width: 50%;
-    padding: 6px;
+    padding: 8px 25px;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
   }
 
   /* END */
