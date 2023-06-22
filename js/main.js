@@ -45,7 +45,7 @@ for(let i = 0; i < links.length; i++) {
 // WINDOW POPUP SETTINGS
 const cards = [
     {
-        id: 'work1',
+        id: '0',
         img: './assets/tonic.png',
         alt: 'Tonic',
         name: 'Tonic',
@@ -57,9 +57,10 @@ const cards = [
         language2: 'Ruby on rails',
         language3: 'css',
         language4: 'javascript',
+        framework: 'Bootstrap'
     },
     {
-        id: 'work2',
+        id: '1',
         img: './assets/multi.png',
         alt: 'Multi-Post Stories',
         name: 'Multi-Post Stories',
@@ -71,9 +72,10 @@ const cards = [
         language2: 'Ruby on rails',
         language3: 'css',
         language4: 'javascript',
+        framework: 'Bootstrap'
     },
     {
-        id: 'work3',
+        id: '2',
         img: './assets/facebook.png',
         alt: 'Facebook 360',
         name: 'Facebook 360',
@@ -85,9 +87,10 @@ const cards = [
         language2: 'Ruby on rails',
         language3: 'css',
         language4: 'javascript',
+        framework: 'Bootstrap'
     },
     {
-        id: 'work4',
+        id: '3',
         img: './assets/uber.png',
         alt: 'Uber Navigation',
         name: 'Uber Navigation',
@@ -99,6 +102,7 @@ const cards = [
         language2: 'Ruby on rails',
         language3: 'css',
         language4: 'javascript',
+        framework: 'Bootstrap'
     }
 ]
 
@@ -137,290 +141,92 @@ const printCard = () => {
 printCard()
 
 // WORK BUTTON SETTINGS
-const workButton = document.getElementsByClassName('work__button')
 const popupWindow = document.getElementById('popupWindow')
+const popupDescription = document.querySelector('.popup__description')
+const navbarSection = document.querySelector('.navbar__section')
+const workSection = document.querySelector('.work__section')
+const workBtn = document.querySelectorAll('.work__button')
 
-for (let i = 0; i < workButton.length; i += 1) {
-    workButton[i].addEventListener('click', () => {
-        if (workButton[i].id === 'work1') {
-            workButton[i].classList.toggle('press')
-            workButton[1].classList.remove('press')
-            workButton[2].classList.remove('press')
-            workButton[3].classList.remove('press')
+const createPopup = (ind) => {
+    const work = cards[ind]
+    const {
+        img,
+        alt,
+        name,
+        feature,
+        feature2,
+        feature3,
+        description,
+        language,
+        language2,
+        language3,
+        language4,
+        framework
+    } = work
 
-            const article = document.createElement('article')
-            article.classList.add('popup__description')
-            article.innerHTML = 
-            `
-            <header class="popup__header">
-                <h2 class="popup__title">Tonic</h2> 
-                <i onclick="" class="fa-solid fa-times popup__xmark"></i>
-            </header>
-            <ul class="popup__features">
-                <li class="popup__features__item">Canopy</li>
-                <li class="popup__features__item">Back End Dev</li>
-                <li class="popup__features__item">2015</li>
+    const article = document.createElement('article')
+    article.classList.add('popup__description')
+    article.innerHTML = 
+    `
+    <header class="popup__header">
+        <h2 class="popup__title">${name}</h2> 
+        <i onclick="" class="fa-solid fa-times popup__xmark"></i>
+    </header>
+    <ul class="popup__features">
+        <li class="popup__features__item">${feature}</li>
+        <li class="popup__features__item">${feature2}</li>
+        <li class="popup__features__item">${feature3}</li>
+    </ul>
+    <figure class="popup__image__container multi">
+        <img src="${img}" alt="${alt}" class="popup__image"> 
+    </figure>
+    <div class="popup__features__container">
+        <p class="popup__paragraph">${description}</p>
+        <div class="popup__bottom__container">
+            <ul class="popup__list__container ruby">
+                <li class="popup__language__item">${language}</li>
+                <li class="popup__language__item">${language2}</li>
+                <li class="popup__language__item">${language3}</li>
+                <li class="popup__language__item">${language4}</li>
+                <li class="popup__language__item">${framework}</li>
             </ul>
-            <figure class="popup__image__container multi">
-                <img src="./assets/SnapshootPortfolio.png" alt="" class="popup__image"> 
-            </figure>
-            <div class="popup__features__container">
-                <p class="popup__paragraph__mobile">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.
-                </p>
-                <p class="popup__paragraph__desktop">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    <br>
-                    <br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
-                </p>
-                <div class="popup__bottom__container">
-                    <ul class="popup__list__container ruby">
-                        <li class="popup__language__item">html</li>
-                        <li class="popup__language__item">css</li>
-                        <li class="popup__language__item">javascript</li>
-                        <li class="popup__language__item">Ruby</li>
-                        <li class="popup__language__item">Bootstrap</li>
-                    </ul>
-                    <div class="about__btn__container">
-                        <button class="popup__button">
-                            See live
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </button>
-                        <button class="popup__button">
-                            See source
-                            <i class="fa-brands fa-github"></i>
-                        </button>
-                    </div>
-                </div>    
+            <div class="about__btn__container">
+                <button class="popup__button">
+                    See live
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <button class="popup__button">
+                    See source
+                    <i class="fa-brands fa-github"></i>
+                </button>
             </div>
-            `
-            popupWindow.appendChild(article)
-            
-            const workSection = document.querySelector('.work__section')
-            workSection.classList.toggle('blurEffect')
-            
-            const navbarSection = document.querySelector('.navbar__section')
-            navbarSection.style.display = 'none'
-            
-            const closePopup = document.querySelector('.popup__xmark')
-            closePopup.addEventListener('click', ()=> {
-                const popupDescription = document.querySelector('.popup__description')
-                popupDescription.remove()
-                workSection.classList.remove('blurEffect')
-                navbarSection.style.display = 'flex'
-                workButton[i].classList.remove('press')
-            })
+        </div>    
+    </div>
+    `
+    popupWindow.appendChild(article)
 
-        } else if (workButton[i].id === 'work2') {
-            workButton[i].classList.toggle('press')
-            workButton[0].classList.remove('press')
-            workButton[2].classList.remove('press')
-            workButton[3].classList.remove('press')
-
-            const article = document.createElement('article')
-            article.classList.add('popup__description')
-            article.innerHTML = 
-            `
-            <header class="popup__header">
-                <h2 class="popup__title">Multi-Post Stories</h2> 
-                <i onclick="" class="fa-solid fa-times popup__xmark"></i>
-            </header>
-            <ul class="popup__features">
-                <li class="popup__features__item">FACEBOOK</li>
-                <li class="popup__features__item">Full Stack Dev</li>
-                <li class="popup__features__item">2015</li>
-            </ul>
-            <figure class="popup__image__container multi">
-                <img src="./assets/SnapshootPortfolio.png" alt="" class="popup__image"> 
-            </figure>
-            <div class="popup__features__container">
-                <p class="popup__paragraph__mobile">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-                </p>
-                <p class="popup__paragraph__desktop">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    <br>
-                    <br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
-                </p>
-                <div class="popup__bottom__container">
-                    <ul class="popup__list__container ruby">
-                        <li class="popup__language__item">html</li>
-                        <li class="popup__language__item">css</li>
-                        <li class="popup__language__item">javascript</li>
-                        <li class="popup__language__item">Ruby</li>
-                        <li class="popup__language__item">Bootstrap</li>
-                    </ul>
-                    <div class="about__btn__container">
-                        <button class="popup__button">
-                            See live
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </button>
-                        <button class="popup__button">
-                            See source
-                            <i class="fa-brands fa-github"></i>
-                        </button>
-                    </div>
-                </div>  
-            </div>
-            `
-            popupWindow.appendChild(article)
-            
-            const workSection = document.querySelector('.work__section')
-            workSection.classList.toggle('blurEffect')
-            
-            const navbarSection = document.querySelector('.navbar__section')
-            navbarSection.style.display = 'none'
-            
-            const closePopup = document.querySelector('.popup__xmark')
-            closePopup.addEventListener('click', ()=> {
-                const popupDescription = document.querySelector('.popup__description')
-                popupDescription.remove()
-                workSection.classList.remove('blurEffect')
-                navbarSection.style.display = 'flex'
-                workButton[i].classList.remove('press')
-            })
-        } else if (workButton[i].id === 'work3') {
-            workButton[i].classList.toggle('press')
-            workButton[0].classList.remove('press')
-            workButton[1].classList.remove('press')
-            workButton[3].classList.remove('press')
-
-            
-            const article = document.createElement('article')
-            article.classList.add('popup__description')
-            article.innerHTML = 
-            `
-            <header class="popup__header">
-                <h2 class="popup__title">Facebook 360</h2> 
-                <i onclick="" class="fa-solid fa-times popup__xmark"></i>
-            </header>
-            <ul class="popup__features">
-                <li class="popup__features__item">FACEBOOK</li>
-                <li class="popup__features__item">Full Stack Dev</li>
-                <li class="popup__features__item">2015</li>
-            </ul>
-            <figure class="popup__image__container multi">
-                <img src="./assets/SnapshootPortfolio.png" alt="" class="popup__image"> 
-            </figure>
-            <div class="popup__features__container">
-                <p class="popup__paragraph__mobile">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-                </p>
-                <p class="popup__paragraph__desktop">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    <br>
-                    <br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
-                </p>
-                <div class="popup__bottom__container">
-                    <ul class="popup__list__container ruby">
-                        <li class="popup__language__item">html</li>
-                        <li class="popup__language__item">css</li>
-                        <li class="popup__language__item">javascript</li>
-                        <li class="popup__language__item">Ruby</li>
-                        <li class="popup__language__item">Bootstrap</li>
-                    </ul>
-                    <div class="about__btn__container">
-                        <button class="popup__button">
-                            See live
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </button>
-                        <button class="popup__button">
-                            See source
-                            <i class="fa-brands fa-github"></i>
-                        </button>
-                    </div>
-                </div>  
-            </div>
-            `
-            popupWindow.appendChild(article)
-            
-            const workSection = document.querySelector('.work__section')
-            workSection.classList.toggle('blurEffect')
-            
-            const navbarSection = document.querySelector('.navbar__section')
-            navbarSection.style.display = 'none'
-            
-            const closePopup = document.querySelector('.popup__xmark')
-            closePopup.addEventListener('click', ()=> {
-                const popupDescription = document.querySelector('.popup__description')
-                popupDescription.remove()
-                workSection.classList.remove('blurEffect')
-                navbarSection.style.display = 'flex'
-                workButton[i].classList.remove('press')
-            })
-        } else if (workButton[i].id === 'work4') {
-            workButton[i].classList.toggle('press')
-            workButton[0].classList.remove('press')
-            workButton[1].classList.remove('press')
-            workButton[2].classList.remove('press')
-
-            
-            const article = document.createElement('article')
-            article.classList.add('popup__description')
-            article.innerHTML = 
-            `
-            <header class="popup__header">
-                <h2 class="popup__title">Uber Navigation</h2> 
-                <i onclick="" class="fa-solid fa-times popup__xmark"></i>
-            </header>
-            <ul class="popup__features">
-                <li class="popup__features__item">Uber</li>
-                <li class="popup__features__item">Lead Developer</li>
-                <li class="popup__features__item">2018</li>
-            </ul>
-            <figure class="popup__image__container multi">
-                <img src="./assets/SnapshootPortfolio.png" alt="" class="popup__image"> 
-            </figure>
-            <div class="popup__features__container">
-                <p class="popup__paragraph__mobile">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-                </p>
-                <p class="popup__paragraph__desktop">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    <br>
-                    <br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
-                </p>
-                <div class="popup__bottom__container">
-                    <ul class="popup__list__container ruby">
-                        <li class="popup__language__item">html</li>
-                        <li class="popup__language__item">css</li>
-                        <li class="popup__language__item">javascript</li>
-                        <li class="popup__language__item">Ruby</li>
-                        <li class="popup__language__item">Bootstrap</li>
-                    </ul>
-                    <div class="about__btn__container">
-                        <button class="popup__button">
-                            See live
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </button>
-                        <button class="popup__button">
-                            See source
-                            <i class="fa-brands fa-github"></i>
-                        </button>
-                    </div>
-                </div>  
-            </div>
-            `
-            popupWindow.appendChild(article)
-            
-            const workSection = document.querySelector('.work__section')
-            workSection.classList.toggle('blurEffect')
-            
-            const navbarSection = document.querySelector('.navbar__section')
-            navbarSection.style.display = 'none'
-            
-            const closePopup = document.querySelector('.popup__xmark')
-            closePopup.addEventListener('click', ()=> {
-                const popupDescription = document.querySelector('.popup__description')
-                popupDescription.remove()
-                workSection.classList.remove('blurEffect')
-                navbarSection.style.display = 'flex'
-                workButton[i].classList.remove('press')
-            })
-        } 
+    document.body.style.overflow = 'hidden'
+    
+    const closePopup = document.querySelector('.popup__xmark')
+    closePopup.addEventListener('click', ()=> {
+        workSection.classList.remove('blurEffect')
+        navbarSection.style.display = 'flex'
+        document.body.style.overflow = 'scroll'
+        popupWindow.removeChild(article)
+        workBtn.forEach((btn) => {
+            btn.classList.remove('press')
+        })
     })
 }
+    
+workBtn.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        btn.classList.toggle('press')
+        const ind = e.target.id
+        createPopup(ind)
+        workSection.classList.add('blurEffect')
+        navbarSection.style.display = 'none'
+    })
+})
+
+
