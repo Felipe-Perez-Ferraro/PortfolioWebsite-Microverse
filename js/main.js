@@ -286,3 +286,17 @@ form.addEventListener('submit', (event)=> {
     }
 })
 
+if (typeof(Storage) !== 'undefined') {
+    let storedName = localStorage.getItem('name')
+    let storedEmail = localStorage.getItem('email')
+
+    if(storedName) {
+        document.getElementById('name').value = storedName
+    }
+
+    if(storedEmail) {
+        document.getElementById('email').value = storedEmail
+    }
+} else {
+    console.log('Error with localStorage')
+}
