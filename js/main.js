@@ -297,6 +297,17 @@ if (typeof(Storage) !== 'undefined') {
     if(storedEmail) {
         document.getElementById('email').value = storedEmail
     }
+    
+    form.addEventListener('submit', (e)=> {
+      e.preventDefault()
+
+      let name = document.getElementById('name').value
+      let email = document.getElementById('email').value
+
+      localStorage.setItem('name', name)
+      localStorage.setItem('email', email)
+  })
+
 } else {
     console.log('Error with localStorage')
 }
