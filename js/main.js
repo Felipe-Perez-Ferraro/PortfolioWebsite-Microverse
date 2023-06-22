@@ -299,7 +299,7 @@ if (typeof(Storage) !== 'undefined') {
     }
     
     form.addEventListener('submit', (e)=> {
-      e.preventDefault()
+        e.preventDefault()
 
         let name = document.getElementById('name').value
         let email = document.getElementById('email').value
