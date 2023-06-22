@@ -622,6 +622,14 @@ body.scroll .navbar__section {
 /* MEDIA QUERYS */
 @media screen and (min-width: 768px) {
   /* HEADER SECTION */
+  .emailError {
+    color: #fff;
+  }
+  
+  .nameError {
+    color: #fff;
+  }
+
   .navbar__section {
     height: 72px;
     padding: 0 74px;
