@@ -42,7 +42,7 @@ for(let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', toggleMenu)
 }
 
-// WINDOW POPUP SETTINGS
+// WORK BUTTON SETTINGS
 const cards = [
     {
         id: '0',
@@ -106,6 +106,7 @@ const cards = [
     }
 ]
 
+// PRINT THE CARDS
 const printCard = () => {
     const cardContainer = document.querySelector('.work__section')
     cards.forEach( card => {
@@ -140,7 +141,7 @@ const printCard = () => {
 }
 printCard()
 
-// WORK BUTTON SETTINGS
+// WINDOW POPUP SETTINGS
 const popupWindow = document.getElementById('popupWindow')
 const popupDescription = document.querySelector('.popup__description')
 const navbarSection = document.querySelector('.navbar__section')
@@ -218,7 +219,8 @@ const createPopup = (ind) => {
         })
     })
 }
-    
+
+// WORK BUTTONS    
 workBtn.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         btn.classList.toggle('press')
