@@ -306,7 +306,7 @@ if (typeof(Storage) !== 'undefined') {
             email: formEmail,
         }
 
-        localStorage.setItem('form', JSON.stringify(form));
+        localStorage.setItem('form', JSON.stringify(form))
     })
 
 } else {
