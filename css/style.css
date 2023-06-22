@@ -290,6 +290,7 @@ body.scroll .navbar__section {
   border-radius: 16px;
   padding: 16px;
   background: #fff;
+  overflow: scroll;
   z-index: 1;
 }
 
