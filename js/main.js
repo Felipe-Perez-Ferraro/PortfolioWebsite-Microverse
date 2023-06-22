@@ -240,7 +240,7 @@ const nameError = document.querySelector('#name + span.nameError')
 
 const showMailError = ()=> {
     if (email.validity.valueMissing) {
-        emailError.textContent = "Enter a valid Email please."
+        emailError.textContent = 'Enter a valid Email please.'
     } else if (email.validity.tooShort) {
         emailError.textContent = `Email has a min of ${email.minLength} characters, you entered ${email.value.length}.`
     }
@@ -248,7 +248,7 @@ const showMailError = ()=> {
 
 const showNameError = ()=> {
     if (nameInpt.validity.valueMissing) {
-        nameError.textContent = "Enter a valid Name please."
+        nameError.textContent = 'Enter a valid Name please.'
     } else if (nameInpt.validity.tooShort) {
         nameError.textContent = `Email has a min of ${nameInpt.minLength} characters.`
     }
@@ -256,8 +256,8 @@ const showNameError = ()=> {
 
 email.addEventListener('input', ()=> {
     if (email.validity.valid) {
-        emailError.textContent = ""
-        emailError.className = "emailError"
+        emailError.textContent = ''
+        emailError.className = 'emailError'
     } else {
         showMailError()
     }
@@ -265,8 +265,8 @@ email.addEventListener('input', ()=> {
 
 nameInpt.addEventListener('input', ()=> {
     if (nameInpt.validity.valid) {
-        nameError.textContent = ""
-        nameError.className = "nameError"
+        nameError.textContent = ''
+        nameError.className = 'nameError'
     } else {
         showNameError()
     }
@@ -301,12 +301,12 @@ if (typeof(Storage) !== 'undefined') {
     form.addEventListener('submit', (e)=> {
       e.preventDefault()
 
-      let name = document.getElementById('name').value
-      let email = document.getElementById('email').value
+        let name = document.getElementById('name').value
+        let email = document.getElementById('email').value
 
-      localStorage.setItem('name', name)
-      localStorage.setItem('email', email)
-  })
+        localStorage.setItem('name', name)
+        localStorage.setItem('email', email)
+    })
 
 } else {
     console.log('Error with localStorage')
