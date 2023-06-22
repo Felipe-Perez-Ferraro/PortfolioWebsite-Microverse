@@ -890,16 +890,12 @@ body.scroll .navbar__section {
   }
 
   .popup__image {
-    max-height: 334px;
+    max-height: 350px;
   }
 
-  .popup__paragraph__mobile {
-    display: none;
-  }
-
-  .popup__paragraph__desktop {
+  .popup__paragraph {
     display: block;
-    width: 97%;
+    width: 85%;
   }
 
   .popup__list__container {
@@ -912,10 +908,6 @@ body.scroll .navbar__section {
 
   .about__btn__container {
     gap: 10px;
-  }
-
-  .popup__bottom__container {
-    width: 36%;
   }
 
   .popup__button {
@@ -1079,14 +1071,10 @@ body.scroll .navbar__section {
   }
 
   .popup__image {
-    max-height: 440px;
+    max-height: 490px;
   }
 
-  .popup__paragraph__mobile {
-    display: none;
-  }
-
-  .popup__paragraph__desktop {
+  .popup__paragraph {
     display: block;
     width: 72%;
   }
@@ -1111,7 +1099,7 @@ body.scroll .navbar__section {
   .popup__button {
     margin-top: 20px;
     width: 50%;
-    padding: 8px 25px;
+    padding: 8px 20px;
     font-size: 15px;
     display: flex;
     justify-content: center;
