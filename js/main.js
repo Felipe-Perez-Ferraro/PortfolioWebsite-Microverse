@@ -287,25 +287,26 @@ form.addEventListener('submit', (event)=> {
 })
 
 if (typeof(Storage) !== 'undefined') {
-    let storedName = localStorage.getItem('name')
-    let storedEmail = localStorage.getItem('email')
+    let storedForm = JSON.parse(localStorage.getItem('form'))
 
-    if(storedName) {
-        document.getElementById('name').value = storedName
-    }
-
-    if(storedEmail) {
-        document.getElementById('email').value = storedEmail
+    if(storedForm) {
+        document.getElementById('name').value = storedForm.name
+        document.getElementById('email').value = storedForm.email
     }
     
     form.addEventListener('submit', (e)=> {
         e.preventDefault()
 
-        let name = document.getElementById('name').value
-        let email = document.getElementById('email').value
+        let formName = document.getElementById('name').value
+        let formEmail = document.getElementById('email').value
+        let formMsg = document.querySelector('.contact__submit__container').value
 
-        localStorage.setItem('name', name)
-        localStorage.setItem('email', email)
+        const form = {
+            name: formName,
+            email: formEmail,
+        }
+
+        localStorage.setItem('form', JSON.stringify(form));
     })
 
 } else {
