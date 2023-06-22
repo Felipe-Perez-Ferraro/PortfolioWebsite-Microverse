@@ -112,8 +112,6 @@ const printCard = () => {
     cards.forEach( card => {
         const article = document.createElement('article')
         article.classList.add('work__description')
-        article.classList.add('gs_reveal')
-        article.classList.add('gs_reveal_fromLeft')
         article.innerHTML =
         `
         <figure class="work__image__container multi">
