@@ -187,26 +187,33 @@
                 </div>
                 
                 <form 
+                    novalidate
                     action="https://formspree.io/f/myyaqdlr"
                     method="post"
                     class="contact__form"
                     id="contact__form"
                     >
                     <input 
-                        type="text" 
+                        type="text"
+                        id="name" 
                         name="name"
                         class="contact__form__inpt" 
-                        placeholder="Write your name..." 
+                        placeholder="Write your name..."
+                        min="2" 
                         maxlength="30" 
                         required
                     >   
+                    <span class="nameError"></span>
                     <input 
-                        type="email" 
-                        name="email"
-                        class="contact__form__inpt" 
-                        placeholder="Write your mail..." 
-                        required
+                    type="email" 
+                    id="email"
+                    name="email"
+                    class="contact__form__inpt" 
+                    minlength="8"
+                    placeholder="Write your mail..." 
+                    required
                     >
+                    <span class="emailError"></span>
                     <textarea 
                         form="contact__form" 
                         name="message"
