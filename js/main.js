@@ -263,7 +263,7 @@ email.addEventListener('input', ()=> {
 
 nameInpt.addEventListener('input', ()=> {
     if (nameInpt.validity.valid) {
-        nameError.textContent = ""
+        nameError.textContent = ''
         nameError.className = 'nameError'
     } else {
         showNameError()
