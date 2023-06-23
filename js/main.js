@@ -112,8 +112,6 @@ const printCard = () => {
     cards.forEach( card => {
         const article = document.createElement('article')
         article.classList.add('work__description')
-        article.classList.add('gs_reveal')
-        article.classList.add('gs_reveal_fromLeft')
         article.innerHTML =
         `
         <figure class="work__image__container multi">
@@ -236,6 +234,7 @@ const form = document.getElementById('contact__form')
 const email = document.getElementById('email')
 const emailError = document.querySelector('#email + span.emailError')
 const nameInpt = document.getElementById('name')
+const message = document.getElementById('msg')
 const nameError = document.querySelector('#name + span.nameError')
 
 const showMailError = ()=> {
@@ -286,29 +285,29 @@ form.addEventListener('submit', (event)=> {
     }
 })
 
-if (typeof(Storage) !== 'undefined') {
-    let storedForm = JSON.parse(localStorage.getItem('form'))
-
-    if(storedForm) {
-        document.getElementById('name').value = storedForm.name
-        document.getElementById('email').value = storedForm.email
-    }
-    
-    form.addEventListener('submit', (e)=> {
-        e.preventDefault()
-
-        let formName = document.getElementById('name').value
-        let formEmail = document.getElementById('email').value
-        let formMsg = document.querySelector('.contact__submit__container').value
-
-        const form = {
-            name: formName,
-            email: formEmail,
-        }
-
-        localStorage.setItem('form', JSON.stringify(form))
-    })
-
-} else {
-    console.log('Error with localStorage')
+const storedData = localStorage.getItem('formData')
+if (storedData) {
+    const parsedData = JSON.parse(storedData)
+    nameInpt.value = parsedData.nameInpt
+    email.value = parsedData.email
+    message.value = parsedData.message
 }
+
+nameInpt.addEventListener('input', saveFormData)
+email.addEventListener('input', saveFormData)
+message.addEventListener('input', saveFormData)
+
+function saveFormData() {
+    const formData = {
+        nameInpt: nameInpt.value,
+        email: email.value,
+        message: message.value
+    }
+
+    localStorage.setItem('formData', JSON.stringify(formData))
+}
+
+form.addEventListener('submit', (event)=> {
+    form.reset()
+    localStorage.clear()
+})
