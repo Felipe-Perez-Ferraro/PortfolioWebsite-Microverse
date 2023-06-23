@@ -1,4 +1,3 @@
-
 // ABOUT BUTTON SETTINGS
 const aboutButton = document.querySelector('.about__button')
 aboutButton.addEventListener('click', () => {
@@ -112,8 +111,6 @@ const printCard = () => {
     cards.forEach( card => {
         const article = document.createElement('article')
         article.classList.add('work__description')
-        article.classList.add('gs_reveal')
-        article.classList.add('gs_reveal_fromLeft')
         article.innerHTML =
         `
         <figure class="work__image__container multi">
@@ -221,7 +218,7 @@ const createPopup = (ind) => {
 }
 
 // WORK BUTTONS    
-workBtn.forEach((btn) => {
+workBtn.forEach( (btn) => {
     btn.addEventListener('click', (e) => {
         btn.classList.toggle('press')
         const ind = e.target.id
@@ -231,4 +228,58 @@ workBtn.forEach((btn) => {
     })
 })
 
+// CONTACT FORM
+const form = document.getElementById('contact__form')
+const email = document.getElementById('email')
+const emailError = document.querySelector('#email + span.emailError')
+const nameInpt = document.getElementById('name')
+const nameError = document.querySelector('#name + span.nameError')
+
+const showMailError = ()=> {
+    if (email.validity.valueMissing) {
+        emailError.textContent = 'Enter a valid Email please.'
+    } else if (email.validity.tooShort) {
+        emailError.textContent = `Email has a min of ${email.minLength} characters, you entered ${email.value.length}.`
+    }
+}
+
+const showNameError = ()=> {
+    if (nameInpt.validity.valueMissing) {
+        nameError.textContent = 'Enter a valid Name please.'
+    } else if (nameInpt.validity.tooShort) {
+        nameError.textContent = `Email has a min of ${nameInpt.minLength} characters.`
+    }
+}
+
+email.addEventListener('input', ()=> {
+    if (email.validity.valid) {
+        emailError.textContent = ''
+        emailError.className = 'emailError'
+    } else {
+        showMailError()
+    }
+})
+
+nameInpt.addEventListener('input', ()=> {
+    if (nameInpt.validity.valid) {
+        nameError.textContent = ''
+        nameError.className = 'nameError'
+    } else {
+        showNameError()
+    }
+})
+
+form.addEventListener('submit', (event)=> {
+    if (!email.validity.valid) {
+        showMailError()
+        event.preventDefault()
+    }
+})
+
+form.addEventListener('submit', (event)=> {
+    if (!nameInpt.validity.valid) {
+        showNameError()
+        event.preventDefault()
+    }
+})
 

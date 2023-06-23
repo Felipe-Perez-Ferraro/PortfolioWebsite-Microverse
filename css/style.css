@@ -627,6 +627,18 @@ body.scroll .navbar__section {
   color: #fff;
 }
 
+.emailError {
+  color: #fff;
+}
+
+.nameError {
+  color: #fff;
+}
+
+#email {
+  text-transform: lowercase;
+}
+
 /* END */
 
 /* MEDIA QUERYS */

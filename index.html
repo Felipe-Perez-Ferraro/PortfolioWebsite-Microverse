@@ -187,26 +187,33 @@
                 </div>
                 
                 <form 
+                    novalidate
                     action="https://formspree.io/f/myyaqdlr"
                     method="post"
                     class="contact__form"
                     id="contact__form"
                     >
                     <input 
-                        type="text" 
+                        type="text"
+                        id="name" 
                         name="name"
                         class="contact__form__inpt" 
-                        placeholder="Write your name..." 
+                        placeholder="Write your name..."
+                        min="2" 
                         maxlength="30" 
                         required
                     >   
+                    <span class="nameError"></span>
                     <input 
                         type="email" 
+                        id="email"
                         name="email"
-                        class="contact__form__inpt a" 
                         placeholder="Write your mail..." 
                         required
+                        class="contact__form__inpt" 
+                        minlength="8"
                     >
+                    <span class="emailError"></span>
                     <textarea 
                         form="contact__form" 
                         name="message"
@@ -231,7 +238,6 @@
     </section>
     <!-- END -->
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/animations.js"></script>
