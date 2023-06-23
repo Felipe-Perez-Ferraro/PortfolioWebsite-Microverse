@@ -306,7 +306,9 @@ function saveFormData() {
     localStorage.setItem('formData', JSON.stringify(formData))
 }
 
-form.addEventListener('submit', (event)=> {
-    form.reset()
-    localStorage.clear()
+form.addEventListener('submit', ()=> {
+    if (email.validity.valid && nameInpt.validity.valid) {
+        form.reset()
+        localStorage.clear()
+    }
 })
