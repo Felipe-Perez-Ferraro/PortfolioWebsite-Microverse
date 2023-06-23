@@ -288,7 +288,7 @@ body.scroll .navbar__section {
   gap: 20px;
   border: 1px solid var(--borderColor);
   border-radius: 16px;
-  padding: 16px;
+  padding: 24px;
   background: #fff;
   overflow: scroll;
   z-index: 1;
@@ -775,10 +775,6 @@ body.scroll .navbar__section {
     height: 93vh;
   }
 
-  .popup__image {
-    max-height: 390px;
-  }
-
   /* END */
 
   /* ABOUT SECTION */
@@ -909,10 +905,6 @@ body.scroll .navbar__section {
   /* POPUP STYLES */
   .popup__description {
     width: 76vw;
-  }
-
-  .popup__image {
-    max-height: 350px;
   }
 
   .popup__paragraph {
