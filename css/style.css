@@ -290,6 +290,7 @@ body.scroll .navbar__section {
   border-radius: 16px;
   padding: 16px;
   background: #fff;
+  overflow: scroll;
   z-index: 1;
 }
 
@@ -297,6 +298,15 @@ body.scroll .navbar__section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.popup__xmark {
+  font-size: 22px;
+  color: #67798e;
+  position: initial;
+  padding: 0;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 .popup__title {
