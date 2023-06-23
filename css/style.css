@@ -1084,10 +1084,6 @@ body.scroll .navbar__section {
     height: 96vh;
   }
 
-  .popup__image {
-    max-height: 490px;
-  }
-
   .popup__paragraph {
     display: block;
     width: 72%;
