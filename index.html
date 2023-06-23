@@ -34,13 +34,13 @@
     <!-- MAIN SECTION -->
     <main class="main__section">
         <section class="main__container">
-            <h1 class="main__title gs_reveal">I'm Felipe. <br> Glad to see you!</h1>
-            <p class="main__paragraph gs_reveal">
+            <h1 class="main__title">I'm Felipe. <br> Glad to see you!</h1>
+            <p class="main__paragraph">
                 I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
             </p>
-            <h2 href="#" class="main__callToAction gs_reveal">LET'S CONNECT</h2>
+            <h2 href="#" class="main__callToAction">LET'S CONNECT</h2>
 
-            <ul class="main__socialMedia gs_reveal">
+            <ul class="main__socialMedia">
                 <li class="main__socialMedia__container">
                     <a href="" class="main__socialMedia__links">
                         <i class="fa-brands fa-twitter"></i>
@@ -175,7 +175,7 @@
     <!-- CONTACT SECTION -->
     <section id="contact__section" class="contact__section">
         <article class="contact__container">
-            <div class="contact__animate__container gs_reveal">
+            <div class="contact__animate__container">
                 <div class="contact__text">
                     <h2 class="contact__title">
                         Contact me
@@ -205,18 +205,19 @@
                     >   
                     <span class="nameError"></span>
                     <input 
-                    type="email" 
-                    id="email"
-                    name="email"
-                    class="contact__form__inpt" 
-                    minlength="8"
-                    placeholder="Write your mail..." 
-                    required
+                        type="email" 
+                        id="email"
+                        name="email"
+                        class="contact__form__inpt" 
+                        minlength="8"
+                        placeholder="Write your mail..." 
+                        required
                     >
                     <span class="emailError"></span>
                     <textarea 
                         form="contact__form" 
                         name="message"
+                        id="msg"
                         class="contact__form__textarea contact__form__inpt" 
                         maxlength="500" 
                         placeholder="Write your message here..." 
@@ -238,7 +239,6 @@
     </section>
     <!-- END -->
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/animations.js"></script>
