@@ -233,6 +233,7 @@ const form = document.getElementById('contact__form')
 const email = document.getElementById('email')
 const emailError = document.querySelector('#email + span.emailError')
 const nameInpt = document.getElementById('name')
+const message = document.getElementById('msg')
 const nameError = document.querySelector('#name + span.nameError')
 
 const showMailError = ()=> {
@@ -283,3 +284,31 @@ form.addEventListener('submit', (event)=> {
     }
 })
 
+const storedData = localStorage.getItem('formData')
+if (storedData) {
+    const parsedData = JSON.parse(storedData)
+    nameInpt.value = parsedData.nameInpt
+    email.value = parsedData.email
+    message.value = parsedData.message
+}
+
+nameInpt.addEventListener('input', saveFormData)
+email.addEventListener('input', saveFormData)
+message.addEventListener('input', saveFormData)
+
+function saveFormData() {
+    const formData = {
+        nameInpt: nameInpt.value,
+        email: email.value,
+        message: message.value
+    }
+
+    localStorage.setItem('formData', JSON.stringify(formData))
+}
+
+form.addEventListener('submit', ()=> {
+    if (email.validity.valid && nameInpt.validity.valid) {
+        form.reset()
+        localStorage.clear()
+    }
+})
