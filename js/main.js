@@ -1,4 +1,3 @@
-
 // ABOUT BUTTON SETTINGS
 const aboutButton = document.querySelector('.about__button')
 aboutButton.addEventListener('click', () => {
@@ -219,7 +218,7 @@ const createPopup = (ind) => {
 }
 
 // WORK BUTTONS    
-workBtn.forEach((btn) => {
+workBtn.forEach( (btn) => {
     btn.addEventListener('click', (e) => {
         btn.classList.toggle('press')
         const ind = e.target.id
